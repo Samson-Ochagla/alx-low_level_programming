@@ -2,11 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - assign a random number to the variable n each time it is executed
- * and determine if the number is greater than 5: is positive
- * if the number is 0: is zero, if the number is less than 6: is negative
- * followed by  a new line
- * Return 0 Always (Success)
+ * main - assign a random number to the variable and determine if the last digit is
+ * greater than 6, less than 5 or equals 0 followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -28,4 +26,5 @@ int main(void)
 	{
 	        printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
-        return (0);	
+        return (0);
+}
