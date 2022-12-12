@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdlib.h>
+#include <stdio.h>
 /**
  *  main Assign a random number to a variable and prints:
  *  if the number is greater than 0: is positive
