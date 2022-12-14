@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 /**
  * main- Program that prints all possible combinations of two two-digit numbers,
  * ranging from 0-99, separated by a comma followed by a space
