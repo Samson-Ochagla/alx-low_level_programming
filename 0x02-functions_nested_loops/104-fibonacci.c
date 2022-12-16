@@ -8,7 +8,7 @@ int main(void)
 {
 	int count;
 	unsigned long f1 = 0, f2 = 1, n;
-	unsigned long f1a, f1b, f2a, f2b;
+	unsigned long f1_a, f1_b, f2_a, f2_b;
 	unsigned long a, b;
 
 	for (count = 0; count < 92; count++)
@@ -19,17 +19,17 @@ int main(void)
 		f1 = f2;
 		f2 = n;
 	}
-	f1a = f1 / 1000000000;
-	f2a = f2 / 1000000000;
-	f1b = f1 % 1000000000;
-	f2b = f2 % 1000000000;
+	f1_a = f1 / 1000000000;
+	f2_a = f2 / 1000000000;
+	f1_b = f1 % 1000000000;
+	f2_b = f2 % 1000000000;
 
-	for (count = 93; count < 99; count ++)
+	for (count = 93; count < 99; count++)
 	{
-		a = f1a + f2a;
-		b = f1b + f2b;
-		
-		if (f1b + f2b > 9999999999)
+		a = f1_a + f2_a;
+		b = f1_b + f2_b;
+
+		if (f1_b + f2_b > 9999999999)
 		{
 			a += 1;
 			b += 10000000000;
@@ -38,10 +38,10 @@ int main(void)
 		if (count != 98)
 		printf(", ");
 
-		f1a = f2a;
-		f1b = f2b;
-		f2a = a;
-		f2b = b;
+		f1_a = f2_a;
+		f1_b = f2_b;
+		f2_a = a;
+		f2_b = b;
 	}
 	printf("\n");
 	return (0);
