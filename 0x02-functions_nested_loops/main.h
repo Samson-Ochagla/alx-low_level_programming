@@ -1,5 +1,5 @@
-#ifndef "main.h"
-#define "main.h"
+#ifndef main_h
+#define main_h
 /**
  * Description: Header file containing all the function prototypes
  * used in 0x02-functions_nested_loops directory
