@@ -10,10 +10,10 @@ int main(void)
 	int cout;
 	unsigned long f1 = 0, f2 = 1, n;
 
-	for (count = 0; count < 50; cout++)
+	for (cout = 0; cout < 50; cout++)
 	{
 		n = f1 + f2;
-		printf("%lu", sum);
+		printf("%lu", n);
 		f1 = f2;
 		f2 = n;
 
