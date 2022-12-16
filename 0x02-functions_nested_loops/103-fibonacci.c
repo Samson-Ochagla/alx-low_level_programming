@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	unsigned long f1 = 0. f2 = 1, n;
+	unsigned long f1 = 0, f2 = 1, n;
 
 	while (n < 4000000)
 	{
