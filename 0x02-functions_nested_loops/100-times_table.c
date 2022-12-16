@@ -21,6 +21,8 @@ void print_times_table(int n)
 
 				prod = num * mult;
 
+				if (prod <= 99)
+					_putchar(' ');
 				if (prod <= 9)
 					_putchar(' ');
 				if (prod >= 100)
