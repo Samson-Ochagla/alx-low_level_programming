@@ -14,7 +14,7 @@ int main(void)
 	for (count = 0; count < 92; count++)
 	{
 		n = f1 + f2;
-		printf("lu, ", n);
+		printf("%lu, ", n);
 
 		f1 = f2;
 		f2 = n;
@@ -24,7 +24,7 @@ int main(void)
 	f1b = f1 % 1000000000;
 	f2b = f2 % 1000000000;
 
-	for (count =93; count < 99; count ++)
+	for (count = 93; count < 99; count ++)
 	{
 		a = f1a + f2a;
 		b = f1b + f2b;
