@@ -35,7 +35,7 @@ int main(void)
 			b += 10000000000;
 		}
 		printf("%lu%lu", a, b);
-		if (count != 98);
+		if (count != 98)
 		printf(", ");
 
 		f1a = f2a;
