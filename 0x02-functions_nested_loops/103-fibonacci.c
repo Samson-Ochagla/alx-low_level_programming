@@ -7,18 +7,18 @@
 int main(void)
 {
 	unsigned long f1 = 0, f2 = 1, n;
-	
+	float sum;
+
 	while (1)
 	{
 		n = f1 + f2;
 		if (n > 4000000)
 			break;
 		if ((n % 2) == 0)
-			n += n;
-
+			sum += n;
 		f1 = f2;
 		f2 = n;
 	}
-	printf("%ld\n", n);
+	printf("%.0f\n", sum);
 	return (0);
 }
