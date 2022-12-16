@@ -7,14 +7,17 @@
 int main(void)
 {
 	unsigned long f1 = 0, f2 = 1, n;
-
-	while (n < 4000000)
+	
+	while (1)
 	{
 		n = f1 + f2;
+		if (n > 4000000)
+			break;
 		if ((n % 2) == 0)
-		{
-			n += f1;
-		}
+			n += n;
+
+		f1 = f2;
+		f2 = n;
 	}
 	printf("%ld\n", n);
 	return (0);
