@@ -5,7 +5,7 @@
  *  Return: Always 0 (Success)
  */
 int main(void)
-
+{
 	int i, sum = 0;
 
 	for (i= 0; i < 1024; i++)
