@@ -5,13 +5,14 @@
  */
 int main(void)
 {
-	printf("_\n");
-	printf("p\n");
-	printf("u\n");
-	printf("t\n");
-	printf("c\n");
-	printf("h\n");
-	printf("a\n");
-	printf("r\n");
+	printf("_");
+	printf("p");
+	printf("u");
+	printf("t");
+	printf("c");
+	printf("h");
+	printf("a");
+	printf("r");
+	printf("\n");
 	return (0);
 }
