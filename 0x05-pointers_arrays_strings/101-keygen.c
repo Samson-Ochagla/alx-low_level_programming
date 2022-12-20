@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-	char password[4];
+	char password[84];
 	int samson = 0, sum = 0, diff_half1, diff_half2;
 	srand(time(0));
 
 	while
 		(sum <= 2772)
 		{
-			password[samson] = 33 + rand() % 14;
+			password[samson] = 33 + rand() % 94;
 			sum = sum + password[samson++];
 		}
 	password[samson] = '\0';
@@ -31,9 +31,18 @@ int main(void)
 		{
 			if (password[samson] >= (33 + diff_half1))
 			{
-				password[samson] -= diff_half1;
+				password[samson] = password[samson] -
+					diff_half1;
 				break;
 			}
+		}
+
+		for (samson = 0; password[samson]; samson++)
+		{
+			if (password[samson] >= (33 + diff_half2))
+				password[samson] = password[samson] -
+					diff_half2;
+			break;
 		}
 	}
 	printf("%s", password);
