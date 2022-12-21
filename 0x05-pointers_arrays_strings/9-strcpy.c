@@ -9,8 +9,12 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	char src[samson] = char dest[samson];
-	strcpy(dest[samson], src[samson]);
-	printf("strcpy(dest[samson], src[samson]) :%s\n", dest[samson]);
-	return (0);
+	int samson = 0;
+
+	while (src[smson])
+	{
+		dest[samson] = src[samson];
+		samson++;
+	}
+	return (dest);
 }
