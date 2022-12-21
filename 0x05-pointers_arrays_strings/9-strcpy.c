@@ -11,7 +11,7 @@ char *_strcpy(char *dest, char *src)
 {
 	int samson = 0;
 
-	while (src[smson])
+	while (src[samson])
 	{
 		dest[samson] = src[samson];
 		samson++;
