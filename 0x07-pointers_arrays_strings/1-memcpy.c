@@ -8,11 +8,14 @@
  */
 void *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int sam;
-	unsigned char *destination = dest;
-	const unsigned char *source = src;
+	unsigned int i = 0;
+	unsigned int j = 0;
 
-	for (sam = 0; sam < n; sam++)
-		destination[sam] = source[sam];
+	while (i < n)
+	{
+		*(dest + i) = *(src + j);
+		i += 1;
+		j += 1;
+	}
 	return (dest);
 }
