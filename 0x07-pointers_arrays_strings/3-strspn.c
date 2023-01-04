@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strpbrk - function that gets the length of a prefix substring
+ * _strspn - function that gets the length of a prefix substring
  * @s: The string to be searched
  * @accept: The prefix to be measured
  * Return: The number of bytes in s which consist
