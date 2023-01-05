@@ -1,6 +1,4 @@
 #include "main.h"
-int getNumPrim(int num, int i);
-int is_prime_number(int n);
 /**
  * getNumPrim - Checks if a number is 0 or 1
  * @num: The number to be checked
