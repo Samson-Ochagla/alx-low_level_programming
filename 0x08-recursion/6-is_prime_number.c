@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * getNumPrim - Checks if a number is 0 or 1
  * @num: The number to be checked
