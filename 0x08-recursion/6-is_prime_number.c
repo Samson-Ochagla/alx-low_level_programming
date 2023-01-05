@@ -24,12 +24,15 @@ int is_divisible(int num, int div)
  * 0 If the integer is not prime
  * 1 If the number is prime
  */
-int is_prime_number(int n)
+int is_pirime_number(int n)
 {
 	int div = 2;
 
 	if (n <= 1)
 		return (0);
+
+	if (n >= 2 && n <= 3)
+		return (1);
 
 	return (is_divisible(n, div));
 }
