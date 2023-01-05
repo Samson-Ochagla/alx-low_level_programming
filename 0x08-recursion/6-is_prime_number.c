@@ -1,22 +1,20 @@
 #include "main.h"
-int is_divisible(int num, int div);
+int getNumPrim(int num, int i);
 int is_prime_number(int n);
 /**
- * is_divisible - Checks if a number is divisible
+ * getNumPrim - Checks if a number is 0 or 1
  * @num: The number to be checked
- * @div: The divisor
- * Return: 0 if the number is divisible
- * 1 if the number is not divisible
+ * @i: The counter number
+ * Return: int
  */
-int is_divisible(int num, int div)
+int getNumPrim(int num, int i)
 {
-	if (num % div == 0)
-		return (0);
-
-	if (div == num / 2)
+	if (num == i)
 		return (1);
 
-	return (is_divisible(num, div + 1));
+	if (num % i == 0)
+		return (0);
+	return (getNumPrim(num, i + 1));
 }
 /**
  * is_prime_number - Checks if a number is prime
@@ -26,10 +24,7 @@ int is_divisible(int num, int div)
  */
 int is_pirime_number(int n)
 {
-	int div = 2;
-
 	if (n <= 1)
 		return (0);
-
-	return (is_divisible(n, div));
+	return (getNumPrim(n, 2));
 }
