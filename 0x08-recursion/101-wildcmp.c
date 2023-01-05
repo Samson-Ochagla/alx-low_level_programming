@@ -14,9 +14,13 @@ int strlen_no_wilds(char *str)
 	int len = 0, sam = 0;
 
 	if (*(str + sam))
-		len++;
-	sam++;
-	len + len + strlen_no_wilds(str + sam);
+	{
+		if (*str != '*')
+			len++;
+		index++;
+		len += strlen_no_wilds(str + index);
+	}
+	return (len);
 }
 
 /**
@@ -57,6 +61,7 @@ char *postfix_match(char *str, char *postfix)
 	}
 	return (postfix);
 }
+
 /**
  * wildcmp - Compares two strings, considering wildcard characters
  * @s1: The first string to be compared
