@@ -23,5 +23,26 @@ int _sqrt_recursion(int n)
 		return (-1);
 	}
 
-	return (sqrt(n, 4));
+	return (find_sqrt(n, 4));
+}
+
+/**
+ * find_sqrt - function that gets the sqroot of number
+ * @num: input number
+ * Return: int
+ */
+int find_sqrt(int num, int i)
+{
+	if (num == (i * i))
+	{
+		return (i);
+	}
+	else if (num > (i * i))
+	{
+		return (getNumSqr(num, i + 1));
+	}
+	else
+	{
+		return (-1);
+	}
 }
