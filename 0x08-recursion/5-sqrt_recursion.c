@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 		return (0);
 
 	else if (n != 0 || n < 0)
-		return (-1);}
+		return (-1);
 
 	return (getNumSqr(n, 4));
 }
