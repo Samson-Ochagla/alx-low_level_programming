@@ -39,7 +39,7 @@ int find_sqrt(int num, int i)
 	}
 	else if (num > (i * i))
 	{
-		return (getNumSqr(num, i + 1));
+		return (find_sqrt(num, i + 1));
 	}
 	else
 	{
