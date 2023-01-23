@@ -2,6 +2,11 @@
 #define main_h
 #include <stdio.h>
 /**
+ * File - main.h
+ * Description : file containing prototypes for all functions
+ * 		used in the 0x08-recursion directory
+ */
+
 int _putchar(char c);
 
 void _puts_recursion(char *s);
