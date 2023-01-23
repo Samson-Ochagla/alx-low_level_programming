@@ -9,40 +9,30 @@
 int _sqrt_recursion(int n)
 {
 	if (n == 4)
-	{
 		return (2);
-	}
 
 	if (n == 0)
-	{
 		return (0);
-	}
 
 	else if (n != 0 || n < 0)
-	{
-		return (-1);
-	}
+		return (-1);}
 
-	return (find_sqrt(n, 4));
+	return (getNumSqr(n, 4));
 }
 
 /**
- * find_sqrt - function that gets the sqroot of number
+ * getNumSqr - function that gets the sqroot of number
  * @num: input number
  * Return: int
  */
-int find_sqrt(int num, int i)
+int getNumSqr(int num, int i)
 {
 	if (num == (i * i))
-	{
 		return (i);
-	}
+
 	else if (num > (i * i))
-	{
-		return (find_sqrt(num, i + 1));
-	}
+		return (getNumSqr(num, i + 1));
+
 	else
-	{
 		return (-1);
-	}
 }
