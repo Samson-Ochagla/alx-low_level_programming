@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+
 /**
  * _pow_recursion - function that returns the value of x
  * raised to the power of y
  * @x: base number
  * @y: pow number
+ * Return: int
  */
 int _pow_recursion(int x, int y)
 {
@@ -21,7 +23,6 @@ int _pow_recursion(int x, int y)
  * @s: pointer to an string
  * Return: int
  */
-
 int _strlen(const char *s)
 {
 	int i = 0;
@@ -34,10 +35,12 @@ int _strlen(const char *s)
 }
 
 /**
- * binary_to_uint - Converts a binary number to an unsigned int
- * @b: A pointer to a string of 0 and 1 chars
- * Return: If b is NULL or contains chars not 0 or 1 - 0
- * Otherwise - the converted number
+ * binary_to_uint - function that converts a binary
+ * number to an unsigned int
+ * @b: pointing to a string of 0 and 1 chars
+ * Return: the converted number, or 0 if
+ * there is one or more chars in the string b that is not 0 or 1
+ * b is NULL
  */
 unsigned int binary_to_uint(const char *b)
 {
