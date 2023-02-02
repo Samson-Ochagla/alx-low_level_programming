@@ -1,6 +1,4 @@
-// File name: 103-find_loop.c
 #include "lists.h"
-
 /**
  * find_listint_loop - Finds the loop contained in
  * a listint_t linked list
@@ -22,20 +20,19 @@ listint_t *find_listint_loop(listint_t *head)
 	{
 		if (samson == boy)
 		{
-			samson = boy;
+			samson = head;
 
 			while (samson != boy)
 			{
 				samson = samson->next;
 				boy = boy->next;
 			}
-
 			return (samson);
 		}
 
 		samson = samson->next;
 		boy = (boy->next)->next;
 	}
-  
 	return (NULL);
 }
+
