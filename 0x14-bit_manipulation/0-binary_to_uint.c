@@ -41,22 +41,19 @@ int _strlen(const char *s)
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num = 0, mult = 1;
-	int len;
+	int len, exp = 0;
+	unsigned int res = 0;
 
-	if (b == '\0')
+	if (b == NULL)
 		return (0);
-
-	for (len = 0; b[len];)
-		len++;
-
-	for (len = len - 1; len >= 0; len--)
+	len = _strlen(b);
+	while (len-- && len >= 0)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[len] == '1')
+			res += _pow_recursion(2, exp);
+		else if (b[len] != '0')
 			return (0);
-
-		num += (b[len] - '0') * mult;
-		mult *= 2;
+		exp++;
 	}
-	return (num);
+	return (res);
 }
